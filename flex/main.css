@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.welcome {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    color: rgb(53, 53, 195);
+    text-align: center;
+    margin: 0 auto;
+    background-color: azure;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+}
+
+.flexContainer {
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+div.flexContainer > * {
+    background-color: rgb(213, 153, 80);
+    width: 100%;
+    border: 1px solid black;
+    height: 80px;
+}
+
+/*=======================
+        768
+=======================*/
+
+@media screen and (min-width: 768px){
+    .container {
+        width: 80%;
+    }
+    div.flexContainer > * {
+        width: calc(50% - 10px);
+    }
+}
+/* 768 */
+
+/*=======================
+        992
+==========================*/
+@media screen and (min-width: 992px){
+    .container {
+        width: 90%;
+    }
+
+    div.flexContainer > * {
+        width: calc(33.33% - 15px);
+    }
+}
+/* 992 */
+
+/*=======================
+        1200
+==========================*/
+@media screen and (min-width: 1200px){
+    .container {
+        width: 95%;
+    }
+    div.flexContainer > * {
+        width: calc(25% - 10px);
+    }
+}
+/* 1200 
+
