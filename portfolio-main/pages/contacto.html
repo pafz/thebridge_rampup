@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto</title>
+</head>
+<body>
+    <header>
+       <h1>Te leo, por favor pregúntame ...</h1>
+    </header>
+    <main>
+       <!-- al menos un formulario -->
+       <form action="" method="GET">
+          <!-- action??? -->
+          <fieldset>
+             <legend>Info personal:</legend>
+             <div class="contact-info"> 
+                <label for="name">Nombre</label>
+                <input type="text" name="name" id="name" placeholder="tu nombre" tabindex="1" autofocus>
+                <label for="surname">Apellidos</label>
+                <input type="text" name="surname" id="surname" placeholder="tus apellidos" tabindex="2">
+                <label for="age">Edad</label>
+                <input type="number" name="age" id="age" placeholder="tu edad" tabindex="3">
+             </div>
+             <div class="contact-llegaste">
+                <p>Cómo llegaste hasta aquí:</p>
+                <label for="woman">Buscador</label>
+                <input type="radio" name="gender" id="woman" value="woman" tabindex="4"> 
+                <label for="man">Feria</label>
+                <input type="radio" name="gender" id="man" value="man">
+                <label for="other">Publi</label>
+                <input type="radio" name="gender" id="other" value="other">
+                <label for="none">Otro</label>
+                <input type="radio" name="gender" id="none" value="none">
+             </div>
+             <div class="form-field">
+                <label for="brand">Sector al que perteneces:</label>
+                <input list="brands" id="brand" name="brand" tabindex="5">
+                <datalist id="brands">
+                   <option value="artista">
+                   <option value="interiorista">
+                   <option value="diseñador">
+                   <option value="arquitecto">
+                   <option value="manufacturera">
+                   <option value="financieras">
+                   <option value="inmobiliarias">
+                   <option value="prensa">
+                   <option value="particular">
+                   <option value="HORECA">
+                   <option value="organismo oficial">
+                   <option value="escuela">
+                   <option value="estudiante">
+                   <option value="otro">
+                </datalist>
+             </div>
+          </fieldset>
+          <div class="form-how">
+          <fieldset>
+          <legend>Por favor, selecciona cómo te gustaría contactar</legend>
+          <div class="date">
+          <label for="date">Día:</label>
+          <input type="date" name="date" id="date" tabindex="6">
+          </div>
+          <div class="time">
+          <label for="time">Hora:</label>
+          <input type="time" name="time" id="time" tabindex="7">
+          </div>
+          <div class="form-means">
+          <label for="means">Medio:</label>
+          <select id="means" name="means" tabindex="8">
+          <optgroup label="Virtual">
+          <option value="1">Meets</option>
+          <option value="2">Zoom</option>
+          <option value="3">Skype</option>
+          <option value="3">mail</option>
+          </optgroup>
+          <optgroup label="Social Media">
+          <option value="4">FB</option>
+          <option value="5">IG</option>
+          <option value="6">Tik Tok</option>
+          </optgroup>
+          <optgroup label="Tradicional">
+          <option value="4">Apdo.</option>
+          <option value="5">+34 Tfno.</option>
+          </optgroup>
+          </div>
+          <div class="message">
+          <label for="message">Escribe tu mensaje:</label>
+          <textarea name="message" id="message" cols="50" rows="10" placeholder="Hola, por favor quiero reunirme para conversar sobre ..." tabindex="9"></textarea>
+          </div>
+          </fieldset>
+          </div>
+          <fieldset>
+             <div class="politics"></div>
+             <label for="feeling">Acepto las políticas y ley de protección de datos</label>
+             <input type="checkbox" name="feeling" id="feeling" tabindex="10">
+             <div class="form-actions">
+                <input type="submit" name="submit" value="enviar" tabindex="11">
+                <input type="reset" name="reset" value="borrar" tabindex="12">
+             </div>
+          </fieldset>
+       </form>
+       <!-- qué img??? -->
+       <div class="img-contact">
+          <img src="" alt="">
+       </div>
+    </main>
+    <footer></footer>
+ </body>
+</html>
+
