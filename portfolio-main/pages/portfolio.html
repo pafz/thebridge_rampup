@@ -1,22 +1,69 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../styles/main.css">
     <title>work</title>
 </head>
 <body>
     <!-- mín algunos elementos multimedia (imágenes, videos, audios) -->
     <header>
-        <h1>Mi trabajo, una parte de mi ...</h1>
+        <h1>Mi trabajo, una parte de mi</h1>
     </header>
-    <div class="container flexContainer">
-        <div class="cajas"></div>
-        <div class="cajas"></div>
-        <div class="cajas"></div>
-        <div class="cajas"></div>
+    <div class="container flex-container">
+        <div class="box">
+            <img src="./../assets/img/asmr-project.jpg" alt="Patricia's asmr project">
+        </div>
+        <div class="box">
+            <img src="./../assets/img/medical_web.jpg" alt="Patricia's medical web">
+        </div>
+        <div class="box">
+            <img src="./../assets/img/qr-concept.jpg" alt="Patricia's QR concept">
+        </div>
      </div>
-    <!-- form para subir img -->
+     <div class="video-portfolio">
+        <video width="100%" height="30%" controls>
+            <source src="./../assets/video/webdesign.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+          </video>
+     </div>
+     <div class="container flex-container">
+        <div class="box">
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Este navegdor no puede reproducir el audio.
+              </audio>
+        </div>
+        <div class="box">
+            <audio controls>
+                <source src="horse.ogg" type="audio/ogg">
+                <source src="horse.mp3" type="audio/mpeg">
+              Este navegdor no puede reproducir el audio.
+              </audio>
+        </div>
+     </div>
+     <div class="container">
+        <form action="" method="GET" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Ayúdame a completementar mi trabajo:</legend>
+                <label for="file">Sube imagen</label>
+                <input type="file" name="file" id="file">
+            </fieldset>
+            <input type="Submit" />
+        </form>
+     </div>
+     <div class="footer">
+        <nav>
+            <ul class="menu">
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Biografía</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+     </div>
 </body>
 </html>
