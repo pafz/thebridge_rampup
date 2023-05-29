@@ -8,6 +8,20 @@
 
 body {
     background-color: #f5f5f5;
+    height: 100%;
+    position: relative;
+    min-height: 100vh;
+}
+
+main {
+    padding-bottom: 79px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    bottom: 0;
 }
 
 @font-face {
@@ -32,10 +46,12 @@ h1 {
     margin: 0;
     padding: 1rem;
     width: 100%;
-    color: rgb(53, 53, 195);
+    /* color: rgb(53, 53, 195); */
     text-align: center;
     margin: 0 auto;
-    background-color: azure;
+    background-color: #ffffff;
+    border-bottom: 2px solid black;
+    margin-bottom: 10px;
 }
 
 .box img, .box audio {
@@ -58,18 +74,58 @@ h1 {
     background-color: grey;
 }
 
-fieldset {
+.card {
     padding: 20px 0;
     margin-bottom: 10px;
-    border: 0;
+    border: 1px solid #222222;
+    border-radius: 5px;
+    box-shadow: 0px 10px 14px -8px rgba(0,0,0,0.75);
+    padding: 10px;
+    background-color: #ffffff;
 }
 
-input {
+.grid {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+
+.col-1 {
+    grid-column: span 1 / span 1;
+}
+
+.col-2 {
+    grid-column: span 2 / span 2;
+}
+
+.col-3 {
+    grid-column: span 3 / span 3;
+}
+
+textarea, input, select {
     padding: 5px;
+    width: 100%;
+}
+
+input[type=checkbox] {
+    width: auto;
+    display: inline;
+}
+
+input[type=submit], input[type=reset] {
+    width: 20%;
+}
+
+label {
+    display: block;
 }
 
 .footer {
     padding: 20px;
+}
+
+nav {
+    padding: 10px;
 }
 
 nav ul {
@@ -83,13 +139,22 @@ nav ul li {
     text-align: center;
 }
 
+.radio-options {
+    flex-direction: row;
+    justify-content: space-around;
+}
+
 a {
     text-decoration: none;
     font-weight: bold;
+    background-color: #ffffff;
+    border: 1px solid #999999;
+    padding: 5px 8px;
+    border-radius: 5px;
 }
 
 a:hover {
-    text-decoration: underline;
+    box-shadow: 0px 10px 14px -8px rgba(0,0,0,0.75);
 }
 
 /*=======================
@@ -105,6 +170,12 @@ a:hover {
     .box {
         width: calc(50% - 10px);
     }
+
+    .grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
 }
 /* 768 */
 
@@ -117,6 +188,12 @@ a:hover {
         width: auto;
         flex: 1;
         min-width: 30%;
+    }
+
+    .grid {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
     }
 }
 /* 1200 
