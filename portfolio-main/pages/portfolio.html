@@ -31,42 +31,83 @@
     <main>
       <div class="container flex-container">
         <div class="box">
-          <img
-            src="./../assets/img/asmr-project.jpg"
-            alt="Patricia's asmr project"
-          />
+          <a href="http://asmrweb.es/" target="_blank">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./../assets/img/asmr-project-600x400m.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="./../assets/img/asmr-project-1200x800l.jpg"
+              />
+              <img
+                src="./../assets/img/asmr-project-300x200s.jpg"
+                alt="Patricia's asmr project"
+                title="Patricia's asmr project link"
+              />
+            </picture>
+          </a>
         </div>
         <div class="box">
-          <img
-            src="./../assets/img/medical_web.jpg"
-            alt="Patricia's medical web"
-          />
+          <a href="http://www.projectmedica.com/" target="_blank">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./../assets/img/medica-web-600x400m.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="./../assets/img/medica-web-1200x800l.jpg"
+              />
+              <img
+                src="./../assets/img/medica-web300x200s.jpg"
+                alt="Patricia's medical web"
+                title="Patricia's medical web link"
+              />
+            </picture>
+          </a>
         </div>
         <div class="box">
-          <img
-            src="./../assets/img/qr-concept.jpg"
-            alt="Patricia's QR concept"
-          />
+          <a href="http://www.qrconcept.be/" target="_blank">
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./../assets/img/qr-concept-600x400m.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="./../assets/img/qr-concept-1200x800l.jpg"
+              />
+              <img
+                src="./../assets/img/qr-concept-300x200s.jpg"
+                alt="Patricia's QR concept"
+                title="Patricia's QR concept link"
+              />
+            </picture>
+          </a>
         </div>
       </div>
       <div class="video-portfolio">
-        <video width="100%" height="30%" controls>
+        <video controls>
+          <!-- hay que tener subidos video y audio tambien en .ogg??? -->
           <source src="./../assets/video/webdesign.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
+          <source src="./../assets/video/webdesign.mp4" type="video/ogg" />
+          Este navegdor no puede reproducir el video.
         </video>
       </div>
       <div class="container flex-container">
         <div class="box">
           <audio controls>
-            <source src="horse.ogg" type="audio/ogg" />
-            <source src="horse.mp3" type="audio/mpeg" />
+            <source src="./../assets/audio/forest.mp3" type="audio/mpeg" />
+            <source src="./../assets/audio/forest.ogg" type="audio/ogg" />
             Este navegdor no puede reproducir el audio.
           </audio>
         </div>
         <div class="box">
           <audio controls>
-            <source src="horse.ogg" type="audio/ogg" />
-            <source src="horse.mp3" type="audio/mpeg" />
+            <source src="./../assets/audio/rain.mp3" type="audio/mpeg" />
+            <source src="./../assets/audio/rain.ogg" type="audio/ogg" />
             Este navegdor no puede reproducir el audio.
           </audio>
         </div>

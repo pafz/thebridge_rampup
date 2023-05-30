@@ -8,7 +8,6 @@
     <title>biography</title>
   </head>
   <body>
-    <!-- mín text y 1 img -->
     <header>
       <h1>Esta es mi trayectoria</h1>
       <nav class="navbar">
@@ -29,52 +28,138 @@
       </nav>
     </header>
     <main>
-      <div class="container text-biography">
-        <p>
-          Desde los 5 años Lorem ipsum dolor sit amet consectetur adipisicing
-          elit. Possimus, quo ipsam aliquid unde quaerat nihil, rerum laboriosam
-          necessitatibus recusandae autem repudiandae nisi sint dolor.
-          Perferendis pariatur illo qui minus amet.
-        </p>
-      </div>
-      <div class="list">
-        <ul>
-          <li>A</li>
-          <li>B</li>
-          <li>
-            C
-            <ol>
-              <li>c.1</li>
-              <li>c.2</li>
-              <li>c.3</li>
-            </ol>
-          </li>
-          <li>D</li>
-          <li>E</li>
-        </ul>
-      </div>
+      <div class="container flex-container">
+        <div class="box">
+          <a
+            href="https://www.linkedin.com/in/patricia-fernandez-zamanillo/"
+            target="_blank"
+          >
+            <picture>
+              <source
+                media="(max-width: 768px)"
+                srcset="./../assets/img/web-developer-picture-800x400m.jpg"
+              />
+              <source
+                media="(max-width: 1200px)"
+                srcset="./../assets/img/web-developer-picture-1200x800l.jpg"
+              />
+              <img
+                src="./../assets/img/web-developer-picture-300x200s.jpg"
+                alt="Patricia's web developer picture"
+                title="Patricia's web developer link"
+              />
+            </picture>
+          </a>
+        </div>
+        <div class="box container text">
+          <p>
+            Desde los 5 años Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Possimus, quo ipsam aliquid unde quaerat nihil, rerum
+            laboriosam necessitatibus recusandae autem repudiandae nisi sint
+            dolor. Perferendis pariatur illo qui minus amet.
+          </p>
+        </div>
+        <div class="container list text">
+          <ul>
+            <li>Repudiandae nisi sint</li>
+            <li>Pariatur illo</li>
+            <li>
+              Quo ipsam aliquid:
+              <ol>
+                <li>consectetur</li>
+                <li>pariatur</li>
+                <li>adipisicing</li>
+              </ol>
+            </li>
+            <li>Necessitatibus recusandae</li>
+            <li>Nisi sint dolo</li>
+          </ul>
+        </div>
 
-      <div class="img-biography">
-        <img src="" alt="" srcset="" />
-      </div>
+        <section class="container flex-container">
+          <article class="box">
+            <div class="header-biography-pic">
+              <header>
+                <h4>Design as a lifestyle</h4>
+              </header>
+            </div>
+            <div class="box">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./../assets/img/designer-picture-600x400m.jpg"
+                />
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="./../assets/img/designer-picture-1200x800l.jpg"
+                />
+                <img
+                  src="./../assets/img/designer-picture-300x200s.jpg"
+                  alt="Patricia's as a designer"
+                  title="Patricia's as a designer picture"
+                />
+              </picture>
+            </div>
+            <figcaption>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            </figcaption>
+          </article>
 
-      <section>
-        <article>
-          <img title="value" />
-          <img src="" alt="" srcset="" />
-          <figcaption></figcaption>
-        </article>
-        <article>
-          <img title="value" />
-          <img src="" alt="" srcset="" />
-          <figcaption></figcaption>
-        </article>
-        <article>
-          <img title="value" />
-          <img src="" alt="" srcset="" />
-          <figcaption></figcaption>
-        </article>
-      </section>
+          <article class="box">
+            <div class="header-biography-pic">
+              <header>
+                <h4>All is art</h4>
+              </header>
+            </div>
+            <div class="box">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./../assets/img/artist-picture-600x400m.jpg"
+                />
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="./../assets/img/artist-picture-1200x800l.jpg"
+                />
+                <img
+                  src="./../assets/img/artist-picture-300x200s.jpg"
+                  alt="Patricia's as an artist"
+                  title="Patricia's as an artist picture"
+                />
+              </picture>
+            </div>
+            <figcaption>Tempore labore debitis eaque dicta nostrum!</figcaption>
+          </article>
+
+          <article class="box">
+            <div class="header-biography-pic">
+              <header>
+                <h4>Developer 101</h4>
+              </header>
+            </div>
+            <div class="box">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./../assets/img/developer-picture-600x400m.jpg"
+                />
+                <source
+                  media="(max-width: 1200px)"
+                  srcset="./../assets/img/developer-picture-1200x800l.jpg"
+                />
+                <img
+                  src="./../assets/img/developer-picture-300x200s.jpg"
+                  alt="Patricia's as an developer"
+                  title="Patricia's as an developer picture"
+                />
+              </picture>
+            </div>
+            <figcaption>
+              Perspiciatis maxime ea odit obcaecati asperiores optio qui!
+            </figcaption>
+          </article>
+        </section>
+      </div>
     </main>
 
     <footer>
@@ -85,7 +170,7 @@
               <a href="./../index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a href="./biografia>Biografía">Biografía</a>
+              <a href="./biografia.html">Biografía</a>
             </li>
             <li class="nav-item">
               <a href="./portfolio.html">Portfolio</a>
