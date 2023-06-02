@@ -30,3 +30,23 @@ const calcularImpares = num => {
 
 startNumber();
 
+/*
+// Pedir numero
+const pedirn = () => {
+  let numero = prompt("¿Qué número desea elegir?");
+  
+  while (isNaN(numero) || numero == 0 || numero == '' || numero == undefined) {
+    numero = prompt("No has ingresado un número o has ingresado 0, por favor, escribe un numero valido");
+  }
+  return parseInt(numero);
+};
+
+// Imprimir por pantalla array
+const imprimirArray = (lista) => {
+  const body = document.getElementsByTagName("body");
+  const p = document.createElement("p");
+  p.innerText = lista;
+  document.body.append(p);
+};
+
+*/
